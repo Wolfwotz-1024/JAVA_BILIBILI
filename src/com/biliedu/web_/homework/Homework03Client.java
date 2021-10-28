@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class Homework03Client {
     public static void main(String[] args) throws IOException {
         // 1、客户端建立socket连接
-//        Socket socket = new Socket("101.35.95.183", 9999); // 连接外网
-        Socket socket = new Socket(InetAddress.getLocalHost(), 9999);
+        Socket socket = new Socket("101.35.95.183", 9999); // 连接外网
+//        Socket socket = new Socket(InetAddress.getLocalHost(), 9999);
 
         // 2、创建输出流, 将文件输入到传输通道中
         Scanner scanner = new Scanner(System.in);
