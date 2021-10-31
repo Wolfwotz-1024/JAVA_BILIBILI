@@ -15,6 +15,9 @@ public class User implements Serializable {
     private String UserId; // 用户Id/用户名
     private String passwd; // 用户密码
 
+    public User() {
+    }
+
     public User(String userId, String passwd) {
         UserId = userId;
         this.passwd = passwd;

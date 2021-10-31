@@ -17,6 +17,13 @@ public class Message implements Serializable {
     private String sendTime; // 发送时间
     private String messType; // 消息类型【可以在接口中定义消息类型】
 
+    public String getMessType() {
+        return messType;
+    }
+
+    public void setMessType(String messType) {
+        this.messType = messType;
+    }
 
     public String getSender() {
         return sender;
@@ -48,5 +55,16 @@ public class Message implements Serializable {
 
     public void setSendTime(String sendTime) {
         this.sendTime = sendTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "sender='" + sender + '\'' +
+                ", getter='" + getter + '\'' +
+                ", content='" + content + '\'' +
+                ", sendTime='" + sendTime + '\'' +
+                ", messType='" + messType + '\'' +
+                '}';
     }
 }
